@@ -1,0 +1,72 @@
+#1- leer el material de la pag
+#2-hacer la autoevaluacion que esta en la pag
+#3- implementar en un archivo de python la clase cola 
+class Cola:
+    def _init_(self) :
+        self.items = []
+
+       def estaVacia(self) :
+           return self.items == []
+
+       def agregar(self,item) :
+           self.items.insert(0,item)
+
+       def avanzar (self) :
+           return self.items.pop() 
+   
+       def tamano (self) :
+           return len(self.items) 
+
+#4- Agregar a la clase pila los siguientes metodos( usando preferentemente los metodos ya utilizados)
+#       1- imprimir cola
+#       2- vaciar cola
+#       3- Dar vuelta cola """
+       def imprimir_cola (self) :
+           print (self.items)
+       
+    def vaciarcola (self) :
+        while not self.estavacia():
+            a=self.avanzar()     
+
+       def darvueltacola(self) :
+           invertir.cola():
+              return 
+c = Cola()
+#5- Escriba una función que reciba una Cola C y mueva sus elementos a una nuevaCola, pero manteniendo el orden de salida de los elementos. Al finalizar la Cola C no debe contener elementos.
+     
+     def recibir_cola(self) :
+          self.items.insertcola(0,item)
+         return self.items == []
+                
+#6- Escriba una rutina que reciba dos Colas C1 y C2 de números enteros y devuelva una nueva Cola con los elementos concatenados en el orden C1 y C2. Es de destacar que las Colas recibidas no deben sufrir ningún tipo de cambio o alteración.
+
+    def recibir_cola(self) :
+       self.items = [1,2]
+       return cola 
+
+#8-Escriba una rutina que reciba dos Colas C1 y C2 de números enteros y proceda a intercambiar sus elementos, pero manteniendo el orden de salida de los mismos. Al finalizar la rutina, la Cola C1 tendrá los elementos de la Cola C2 y esta a su vez tendrá los elementos de la Cola C1.
+
+   def recibir_cola2(self) : 
+       c.agregar = items [1,2]
+       c.avanzar = items [2,1]
+         return cola 
+        
+        
+ #9-Implemente muy simplemente el juego de la silla: Pista use como base esta idea: 
+from pythoned.basicas.cola import Cola
+
+def juegodelasilla(sillas, N):
+    colaSimulacion = Cola()
+    for sillas in listasillas:
+        colaSimulacion.agregar(silla)
+
+    while colaSimulacion.tamano() > 1:
+        for i in range(N):
+            colaSimulacion.agregar(colaSimulacion.avanzar())
+
+        colaSimulacion.avanzar()
+
+    return colaSimulacion.avanzar()
+
+print(juegodelasilla(["1","2","3","4","5","6"],7))
+
